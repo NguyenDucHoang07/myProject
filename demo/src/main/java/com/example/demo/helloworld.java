@@ -1,13 +1,11 @@
 package com.example.demo;
 
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.stereotype.Service;
 
-@RestController
+//Logic nghiệp vụ
+@Service
 public class helloworld {
-    @RequestMapping(value = "/")
-    public String index() {
-        return "Hello world";
+    public String sayHello() {
+        return "HELLO WORLD";
     }
-
 }
